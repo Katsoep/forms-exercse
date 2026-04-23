@@ -16,12 +16,14 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
+  color: rgb(27, 31, 25);
   
 }
 h1 {
   font-family: "Germania One", Arial, Helvetica, sans-serif;
   font-size: 25px;
   letter-spacing: 0.05rem;
+   color: #f5f5f5;
  }
  img{
   max-width: 100%;
@@ -33,34 +35,55 @@ h1 {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #799266;
+}
+.box{
+  width: 50%;
+  height: 100%;
 }
 
 .visual-side {
+  background-image: url(alisonupdyke-cow.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  border: 2px solid magenta;
+}
+.visual-side .logo-container{
+ 
+  display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 60%;
+  position: relative;
+  top: 100px;
+  max-height: 210px;
+  
 }
-.visual-side .visual {
- position: absolute;
- border: 2px solid magenta;
- display: flex;
+.visual .back-color{
+  background-color: rgba(27, 31, 25, 0.3);
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
-.visual-side .back-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.visual .logo{
+  z-index: 1;
+  object-fit: contain;
+  padding: 10px 0px;
+}
+
+.visual-side .credit{
+  text-align: center;
+  font-weight: 800;
+  color: #f5f5f5;
+  margin-bottom: 20px;
 }
 
 --FORM----------------------
 .form-side {
   display: flex;
   flex-direction: column;
-  
-  width: 100%;
 }
 .form-side header {
   margin-top: 80px;
@@ -89,6 +112,7 @@ h1 {
   font-size: 20px;
   font-weight: 800;
   margin: 10px 0px;
+  color:#799266
 }
 .form-one{
 display: flex;
@@ -96,6 +120,10 @@ flex-direction: column;
 }
 .create-account{
   padding: 20px 50px;
+}
+
+button {
+background-color: #d7da54;
 }
 
 
