@@ -91,9 +91,11 @@ h1 {
   margin-top: 80px;
   padding: 20px 50px;
 }
+
 .form-section{
   display: flex;
   gap: 50px;
+  margin-bottom: 20px;
 }
 .section-one, .section-two {
   display: flex;
@@ -109,20 +111,58 @@ h1 {
   padding: 20px 50px;
   margin-bottom: 20px;
   background-color: #ffffff;
+  box-shadow: 0px 10px 10px #00000042;
 }
 .signup-form .title{
   font-size: 20px;
   font-weight: 800;
-  margin: 10px 0px;
+  margin-bottom: 20px;
   color:#799266
 }
 .form-one{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+.form-one label {
+  font-variant: small-caps;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form-one input {
+  border-color: #cfcfcf;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+/* .form-one input:focus:valid{
+   border-color:#799266;
+} */
+
+.form-one input[type=text]:user-invalid {
+  border-color: #c43d3d;
+}
+.form-one input[type=email]:user-invalid  {
+  border-color:#c43d3d;
+}
+
+.form-one input[type=number] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-one input[type=number]:invalid {
+  border-color:#c43d3d;
+}
+.form-one input[type=password]:user-invalid{
+  border-color:#c43d3d;
+}
+
 .create-account{
   padding: 0px 50px;
-  
 }
 
 button {
