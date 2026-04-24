@@ -20,15 +20,21 @@
 }
 
 /* --GENERAL---------------------- */
-h1 {
+h1, h1 em {
   font-family: "Germania One", Arial, Helvetica, sans-serif;
   font-size: 25px;
   letter-spacing: 0.05rem;
    color: #f5f5f5;
+   text-transform: uppercase;
  }
  img{
   max-width: 100%;
   height: auto;
+}
+a {
+  color:#d7da54;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .container {
@@ -59,8 +65,8 @@ h1 {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 100px;
-  max-height: 210px;
+  top: 60px;
+  max-height: 230px;
   
 }
 .visual .back-color{
@@ -72,7 +78,7 @@ h1 {
 .visual .logo{
   z-index: 1;
   object-fit: contain;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 .visual-side .credit{
@@ -86,9 +92,10 @@ h1 {
 .form-side {
   display: flex;
   flex-direction: column;
+ 
 }
 .form-side header {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 20px 50px;
 }
 
@@ -107,9 +114,6 @@ h1 {
   max-width: 680px;
 }
 
-.signup-form {
-
-}
 .form-container {
   padding: 20px 50px;
   margin-bottom: 20px;
@@ -138,9 +142,6 @@ h1 {
   padding: 5px 10px;
   font-size: 15px;
 }
-/* .form-one input:focus:valid{
-   border-color:#799266;
-} */
 
 .form-one input[type=text]:user-invalid {
   border-color: #c43d3d;
@@ -166,6 +167,7 @@ input::-webkit-inner-spin-button {
 
 .create-account{
   padding: 0px 50px;
+  margin-bottom: 20px;
 }
 
 button {
